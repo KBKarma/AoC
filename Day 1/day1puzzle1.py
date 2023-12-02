@@ -50,9 +50,9 @@ def ParseNumberString(inputString):
 
     return output
 
-f = open("C:\\Users\\User\\PycharmProjects\\AoC\\venv\\Inputs\\day1puzzle1.txt")
-#f = open("C:\\Users\\User\\PycharmProjects\\AoC\\venv\\Inputs\\day1puzzle1sample.txt")
-#f = open("C:\\Users\\User\\PycharmProjects\\AoC\\venv\\Inputs\\day1puzzle1sample2.txt")
+f = open("day1puzzle1.txt")
+#f = open("day1puzzle1sample.txt")
+#f = open("day1puzzle1sample2.txt")
 sum = 0
 
 for x in f:
