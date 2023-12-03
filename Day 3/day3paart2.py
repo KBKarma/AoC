@@ -3,6 +3,7 @@ def load_list(filename):
     f = open(filename)
 
     for line in f:
+        print(line)
         line_list = []
         for char in line.strip():
             line_list.append(char)
@@ -31,6 +32,7 @@ def symbol_hunt(row_index, column_index, length_of_int, list_to_search):
 
     for i in range(row_index_start, row_index_end + 1):
         for j in range(column_index_start, column_index_end + 1):
+            test = list_to_search[i][j]
             if list_to_search[i][j].isdigit() is False and list_to_search[i][j] != '.':
                 return True
 
@@ -43,6 +45,9 @@ def find_adjacencies(list_to_use):
     for i in range(len(list_to_use)):
         number = 0
         for j in range(len(list_to_use[i])):
+            i_len = len(list_to_use)
+            j_len = len(list_to_use[i])
+            current_char = list_to_use[i][j]
             if list_to_use[i][j].isdigit() and number == 0:
                 number += int(list_to_use[i][j])
             elif list_to_use[i][j].isdigit() and number != 0:
